@@ -11,10 +11,14 @@ namespace MSILGenerator
         {
             var msilConstructions = new List<IMSILConstruction>();
             msilConstructions.Add( new Initializator() );
-            msilConstructions.Add( new MainFunction() );
-            msilConstructions.Add( new StartCodeBlock() );
-            msilConstructions.Add( new WriteLineFunction( "Test program" ) );
-            msilConstructions.Add( new EndCodeBlock() );
+            var mainBody = new List<IMSILConstruction>
+            {
+                new StackCapacityFunction( 10 ),
+                new WriteLineFunction( "Ого" ),
+                new WriteLineFunction( "это" ),
+                new WriteLineFunction( "работает" )
+            };
+            msilConstructions.Add( new MainFunction( mainBody ) );
             return msilConstructions;
         }
     }

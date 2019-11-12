@@ -2,10 +2,13 @@
 {
     static class ResourceFileRouter
     {
-        public const string INITIALIZE_ROUTE = "MSILResource\\Initialize.txt";
-        public const string ADD_OPERATION_ROUTE = "MSILResource\\AddOperation.txt";
-        public const string SUBTRACTION_OPERATION_ROUTE = "MSILResource\\SubstractionOperation.txt";
-        public const string WRITE_LINE_FUNCTION_ROUTE = "MSILResource\\WriteLine.txt";
-        public const string MAIN_FUNCTION_ROUTE = "MSILResource\\MainFunction.txt";
+        private static readonly string RESOURCE_DIRECTORY = "..\\..\\..\\MSILGenerator\\Resources\\MSILResource";
+
+        public static readonly string INITIALIZE_ROUTE = $"{RESOURCE_DIRECTORY}\\Initialize.txt";
+        public static readonly string ADD_OPERATION_ROUTE = $"{RESOURCE_DIRECTORY}\\AddOperation.txt";
+        public static readonly string SUBTRACTION_OPERATION_ROUTE = $"{RESOURCE_DIRECTORY}\\SubstractionOperation.txt";
+        public static readonly string WRITE_LINE_FUNCTION_ROUTE = $"{RESOURCE_DIRECTORY}\\WriteLine.txt";
+        public static readonly string MAIN_FUNCTION_ROUTE = $"{RESOURCE_DIRECTORY}\\MainFunction.txt";
+        public static readonly string STACK_CAPACITY_ROUTE = $"{RESOURCE_DIRECTORY}\\StackCapacity.txt";
     }
 }

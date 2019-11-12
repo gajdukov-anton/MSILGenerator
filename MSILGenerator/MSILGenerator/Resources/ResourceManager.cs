@@ -30,6 +30,11 @@ namespace MSILGenerator.Resources
             return ReadResourceFromFile( ResourceFileRouter.MAIN_FUNCTION_ROUTE );
         }
 
+        public static string GetStackCapacityFunction()
+        {
+            return ReadResourceFromFile( ResourceFileRouter.STACK_CAPACITY_ROUTE );
+        }
+
         private static string ReadResourceFromFile(string path)
         {
             if ( !File.Exists( path ) )
@@ -38,7 +43,7 @@ namespace MSILGenerator.Resources
                 throw new FileNotFoundException( $"Ресурсный файл {resourceFileName} не обнаружен" );
             }
             string resourceData = "";
-            using ( FileStream fstream = File.OpenRead( $"{path}\note.txt" ) )
+            using ( FileStream fstream = File.OpenRead( path ) )
             {
                 byte [] array = new byte [ fstream.Length ];
                 fstream.Read( array, 0, array.Length );

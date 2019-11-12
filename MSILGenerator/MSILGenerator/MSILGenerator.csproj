@@ -44,6 +44,7 @@
     <Compile Include="ASTConverter.cs" />
     <Compile Include="Generator.cs" />
     <Compile Include="MSILLanguage\Constructions\Functions\MainFunction.cs" />
+    <Compile Include="MSILLanguage\Constructions\Functions\StackCapacityFunction.cs" />
     <Compile Include="MSILLanguage\Constructions\Functions\WriteLineFunction.cs" />
     <Compile Include="MSILLanguage\Constructions\IMSILConstruction.cs" />
     <Compile Include="MSILLanguage\Constructions\Operators\AddingOperator.cs" />
