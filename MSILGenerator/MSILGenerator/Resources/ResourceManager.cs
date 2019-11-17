@@ -30,16 +30,21 @@ namespace MSILGenerator.Resources
             return ReadResourceFromFile( ResourceFileRouter.MAIN_FUNCTION_ROUTE );
         }
 
-        public static string GetStackCapacityFunction()
+        public static string GetStackCapacityFunctionResource()
         {
             return ReadResourceFromFile( ResourceFileRouter.STACK_CAPACITY_ROUTE );
         }
 
-        private static string ReadResourceFromFile(string path)
+        public static string GetVariableDeclarationOperatorResouce()
+        {
+            return ReadResourceFromFile( ResourceFileRouter.VARIABLE_DECLARATION_OPERATOR );
+        }
+
+        private static string ReadResourceFromFile( string path )
         {
             if ( !File.Exists( path ) )
             {
-                string resourceFileName = path.Split('\\').Last();
+                string resourceFileName = path.Split( '\\' ).Last();
                 throw new FileNotFoundException( $"Ресурсный файл {resourceFileName} не обнаружен" );
             }
             string resourceData = "";

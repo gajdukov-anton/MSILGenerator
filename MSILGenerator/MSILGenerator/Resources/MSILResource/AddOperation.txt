@@ -1,0 +1,4 @@
+ldc.i4.s {FIRST_VALUE}
+ldc.i4.s {SECOND_VALUE}
+add
+stloc {RESULT}

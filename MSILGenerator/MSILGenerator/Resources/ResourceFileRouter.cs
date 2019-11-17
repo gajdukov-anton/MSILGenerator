@@ -10,5 +10,6 @@
         public static readonly string WRITE_LINE_FUNCTION_ROUTE = $"{RESOURCE_DIRECTORY}\\WriteLine.txt";
         public static readonly string MAIN_FUNCTION_ROUTE = $"{RESOURCE_DIRECTORY}\\MainFunction.txt";
         public static readonly string STACK_CAPACITY_ROUTE = $"{RESOURCE_DIRECTORY}\\StackCapacity.txt";
+        public static readonly string VARIABLE_DECLARATION_OPERATOR = $"{RESOURCE_DIRECTORY}\\VariableDeclarationOperator.txt";
     }
 }

@@ -48,14 +48,17 @@
     <Compile Include="MSILLanguage\Constructions\Functions\WriteLineFunction.cs" />
     <Compile Include="MSILLanguage\Constructions\IMSILConstruction.cs" />
     <Compile Include="MSILLanguage\Constructions\Operators\AddingOperator.cs" />
+    <Compile Include="MSILLanguage\Constructions\Operators\VariableDeclarationOperator.cs" />
     <Compile Include="MSILLanguage\Constructions\Utils\EndCodeBlock.cs" />
     <Compile Include="MSILLanguage\Constructions\Utils\StartCodeBlock.cs" />
     <Compile Include="MSILLanguage\Constructions\Utils\Variable.cs" />
     <Compile Include="MSILLanguage\Constructions\Utils\Initializator.cs" />
+    <Compile Include="MSILLanguage\Constructions\Utils\VariableType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\ResourceFileRouter.cs" />
     <Compile Include="Resources\ResourceManager.cs" />
     <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Utils\VariableTypeHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\MSILResource\" />
