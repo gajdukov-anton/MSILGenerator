@@ -11,5 +11,8 @@
         public static readonly string MAIN_FUNCTION_ROUTE = $"{RESOURCE_DIRECTORY}\\MainFunction.txt";
         public static readonly string STACK_CAPACITY_ROUTE = $"{RESOURCE_DIRECTORY}\\StackCapacity.txt";
         public static readonly string VARIABLE_DECLARATION_OPERATOR = $"{RESOURCE_DIRECTORY}\\VariableDeclarationOperator.txt";
+        public static readonly string ASSIGNMENT_OPERATOR_FOR_INTEGER = $"{RESOURCE_DIRECTORY}\\AssignmentOperatorForInteger.txt";
+        public static readonly string PUSH_TO_STACK_INTEGER = $"{RESOURCE_DIRECTORY}\\PushToStackInt.txt";
+        public static readonly string PUSH_TO_STACK_VARIABLE_VALUE = $"{RESOURCE_DIRECTORY}\\PushToStackVariableValue.txt";
     }
 }

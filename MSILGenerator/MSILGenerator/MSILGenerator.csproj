@@ -48,6 +48,7 @@
     <Compile Include="MSILLanguage\Constructions\Functions\WriteLineFunction.cs" />
     <Compile Include="MSILLanguage\Constructions\IMSILConstruction.cs" />
     <Compile Include="MSILLanguage\Constructions\Operators\AddingOperator.cs" />
+    <Compile Include="MSILLanguage\Constructions\Operators\AssignmentOperator.cs" />
     <Compile Include="MSILLanguage\Constructions\Operators\VariableDeclarationOperator.cs" />
     <Compile Include="MSILLanguage\Constructions\Utils\EndCodeBlock.cs" />
     <Compile Include="MSILLanguage\Constructions\Utils\StartCodeBlock.cs" />

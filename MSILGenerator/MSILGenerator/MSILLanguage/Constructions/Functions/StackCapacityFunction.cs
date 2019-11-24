@@ -15,7 +15,7 @@ namespace MSILGenerator.MSILLanguage.Constructions.Functions
         public string ToMSILCode()
         {
             var commandCode = ResourceManager.GetStackCapacityFunctionResource();
-            return commandCode.Replace( Constants.RESOURCE_PARAMETER, _capacity.ToString() );
+            return commandCode.Replace( Constants.RESOURCE_VALUE_PARAMETER, _capacity.ToString() );
         }
     }
 }

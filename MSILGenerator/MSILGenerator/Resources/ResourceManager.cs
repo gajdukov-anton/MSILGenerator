@@ -40,6 +40,21 @@ namespace MSILGenerator.Resources
             return ReadResourceFromFile( ResourceFileRouter.VARIABLE_DECLARATION_OPERATOR );
         }
 
+        public static string GetAssignmentOperatorForIntegerResource()
+        {
+            return ReadResourceFromFile( ResourceFileRouter.ASSIGNMENT_OPERATOR_FOR_INTEGER );
+        }
+
+        public static string GetPushToStackIntegerResource()
+        {
+            return ReadResourceFromFile( ResourceFileRouter.PUSH_TO_STACK_INTEGER );
+        }
+
+        public static string GetPushToStackVariableValue()
+        {
+            return ReadResourceFromFile( ResourceFileRouter.PUSH_TO_STACK_VARIABLE_VALUE );
+        }
+
         private static string ReadResourceFromFile( string path )
         {
             if ( !File.Exists( path ) )

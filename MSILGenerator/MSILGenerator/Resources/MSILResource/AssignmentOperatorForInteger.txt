@@ -1,2 +1,2 @@
-add
+ldc.i4 {VALUE}
 stloc {RESULT}

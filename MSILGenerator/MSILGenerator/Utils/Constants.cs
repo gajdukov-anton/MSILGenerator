@@ -2,7 +2,7 @@
 {
     public static class Constants
     {
-        public const string RESOURCE_PARAMETER = "{VALUE}";
+        public const string RESOURCE_VALUE_PARAMETER = "{VALUE}";
         public const string RESOURCE_FUNCTION_BODY = "{BODY}";
         public const string RESOURCE_FIRST_PARAMETER = "{FIRST_VALUE}";
         public const string RESOURCE_SECOND_PARAMETER = "{SECOND_VALUE}";

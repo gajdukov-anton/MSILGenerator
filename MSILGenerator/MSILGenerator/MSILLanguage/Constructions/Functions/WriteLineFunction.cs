@@ -32,8 +32,8 @@ namespace MSILGenerator.MSILLanguage.Constructions.Functions
                 : commandCode.Replace( Constants.RESOURCE_TYPE, VariableTypeHelper.GetMSILRepresentation( _variable.Type ) );
             
             return !string.IsNullOrEmpty( _value )
-                ? commandCode.Replace( Constants.RESOURCE_PARAMETER, $"\"{_value}\"" )
-                : commandCode.Replace( Constants.RESOURCE_PARAMETER, _variable.Name );
+                ? commandCode.Replace( Constants.RESOURCE_VALUE_PARAMETER, $"\"{_value}\"" )
+                : commandCode.Replace( Constants.RESOURCE_VALUE_PARAMETER, _variable.Name );
         }
     }
 }
